@@ -5,9 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import MainMenu from './Components/MainMenu';
 import HeadHelp from './Components/HeadHelp';
 import HeadAdvertisment from './Components/HeadAdvertisment';
-import SmallBanner from './Components/SmallBanner';
-import TopBanner from './Components/TopBanner';
-
+import HeadBanner from './Components/SmallBanner';
 
 function App() {
   return (
@@ -16,10 +14,9 @@ function App() {
             <SearchBar />
             <MainMenu />
             <HeadAdvertisment />
-            {/* <SmallBanner /> */}
-            <TopBanner />
+            <HeadBanner />
+
     </div>
   );
 }
-
 export default App;

@@ -1,12 +1,12 @@
-const smallBanner = [
+const banners = [
     {
         title: 'Speaker',
         image: './images/bannerphoto01.jpg',
         description: '(6 items)'
     },
     {
-        title: 'Speaker',
-        image: './images/bannerphoto01.jpg',
+        title: 'Desktop & Laptop',
+        image: './images/bannerphoto02.jpg',
         description: '(6 items)'
     },
     {
@@ -15,4 +15,4 @@ const smallBanner = [
         description: '(6 items)'
     },
 ]
-export default smallBanner;
+export default banners; 

@@ -4,7 +4,7 @@ const menus = [
         position: 1,
         children: [
             {
-                title: ' Browse categories',
+                title: ' Browse ca74749ories',
                 position: 1
             },
             {

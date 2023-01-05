@@ -121,3 +121,10 @@ input {
     font-size: 22px;
     color: white;
 }
+
+/* small banner heseg */
+
+.smallBanner {
+    background-color: gold;
+    width: 500px;
+}

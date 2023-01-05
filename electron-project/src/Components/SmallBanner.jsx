@@ -1,22 +1,22 @@
 import React from "react";
-import smallBanner from "../Data/smallBanner";
+import banners from "../Data/Banners";
 
-
-
-
-export default function SmallBanner() {
-    const BannerSmall = smallBanner.map((smallBanner) => {
-        return (
-            <BannerSmall    title={smallBanner.title} 
-                            position={smallBanner.image} 
-                            children={smallBanner.description} />
-        )
-    })
-
+const HeadBanner = () => {
     return (
         <div>
-                    {BannerSmall}
-
+            {banners.map((banner) => (
+                <div
+                    title={banner.title}
+                    
+                    />
+            ))}
         </div>
     )
 }
+export default HeadBanner;
+
+
+// var numbers = [1, 2, 3, 4, 5];   
+// const doubleValue = numbers.map((number)=>{   
+//     return (number * 2);   
+// });   
