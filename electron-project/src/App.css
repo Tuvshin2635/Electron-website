@@ -1,0 +1,55 @@
+* {
+    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+    /* background-color: antiquewhite; */
+}
+
+/* header white line parts 1 */
+.header-first-line-end {
+    display: flex;
+    gap: 30px;
+}
+
+/* .header-first-line-end:p>a {
+    text-decoration: none;
+    color: blue;
+} */
+.header-first-line {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    height: 70px;
+    border: 1px hidden black;
+}
+/* header tsenher part2 */
+.header-second-line {
+    /* position: absolute; */
+    background-color: #003F62;
+    border: 1px solid black;
+    height: 100px;
+}
+.header-second-line-inside {
+    display: flex;
+    margin: 22px 0;
+    margin-left: 119px;
+    /* padding: 22px 30px; */
+}
+.header-second-line input {
+    width: 306px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px hidden white;
+    background-color: white;
+}
+.header-second-line button {
+    width: 132px;
+    height: 50px;
+    color: white;
+    background-color: #EDA415;
+    border-radius: 20px;
+    border: 1px solid #EDA415;
+}
