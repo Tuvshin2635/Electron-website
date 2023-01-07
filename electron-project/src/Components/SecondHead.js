@@ -18,7 +18,7 @@ function SecondHead() {
     return nextData;
   });
   return (
-    <AliceCarousel
+    <AliceCarousel className="taslax"
       disableDotsControls="true"
       responsive={{
         100: { items: 1 },
@@ -28,3 +28,4 @@ function SecondHead() {
   );
 }
 export default SecondHead;
+
