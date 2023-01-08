@@ -17,8 +17,9 @@ function ProductMain() {
         <AliceCarousel
    
             responsive={{
-                1024: { items: 3 },
+                1024: { items: 4 },
             }}
+
         >{ProductMains}
         </AliceCarousel>
     )

@@ -262,7 +262,7 @@ input {
 
 .productMain {
   margin-top: 40px;
-  margin-left: 80px;
+  margin-left: 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -572,4 +572,32 @@ input {
 .alice-carousel__dots-item:not(.__custom).__active {
   background-color: #EDA415;
 
+}
+
+/* sponsor logos parts */
+#sponsorLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 55.3px;
+  width: 1317px;
+  height: 136px;
+  /* left: 60px; */
+  /* top: 3476px; */
+
+  background: #E2F4FF;
+}
+
+#sponsorLogos img {
+  color: red;
+}
+
+
+/* .logoContainer {
+  display: flex;
+} */
+.gadnatalaaraashde {
+  display: flex;
 }

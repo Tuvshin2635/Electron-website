@@ -11,6 +11,7 @@ import ProductMain from "./Components/MainProduct";
 import BigBanner from "./Components/BigBanner";
 import FooterProduct from "./Components/ProductFooter";
 import CommentClient from "./Components/CommentCLients";
+import SponsorName from "./Components/Sponsor";
 
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
       <FooterProduct />
       <div className="CommentClientDot">
         < CommentClient />
+      </div>
+      <div className="gadnatalaaraashde">
+        <SponsorName />
       </div>
     </div>
   );

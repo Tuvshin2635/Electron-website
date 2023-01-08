@@ -22,7 +22,7 @@ function CommentClient() {
         )
     })
     return (
-        <AliceCarousel disableButtonsControls="true"
+        <AliceCarousel 
             responsive={{
                 1024: { items: 3 },
             }}
@@ -33,3 +33,5 @@ function CommentClient() {
 }
 
 export default CommentClient;
+
+// disableButtonsControls="false"

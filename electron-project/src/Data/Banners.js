@@ -221,19 +221,19 @@ export const commentClient = [
 
  export const brands = [
     {
-        logo: "images/brand01.jpg"
+        logo: "images/brand-4.png"
     },
     {
-        logo: "images/brand02.jpg"
+        logo: "images/brand-7.png"
     },
     {
-        logo: "images/brand03.jpg"
+        logo: "images/brand-5.png"
     },
     {
-        logo: "images/brand04.jpg"
+        logo: "images/brand-6.png"
     },
     {
-        logo: "images/brand05.jpg"
+        logo: "images/brand-8.png"
     },
 
  ]
