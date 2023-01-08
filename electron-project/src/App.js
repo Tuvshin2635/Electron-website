@@ -8,7 +8,10 @@ import HeadAdvertisment from "./Components/HeadAdvertisment";
 import SecondHead from "./Components/SecondHead";
 import ProductBar from "./Components/ProductBar";
 import ProductMain from "./Components/MainProduct";
-// import AliceCarousels from './Components/BannerCarousel'
+import BigBanner from "./Components/BigBanner";
+import FooterProduct from "./Components/ProductFooter";
+import CommentClient from "./Components/CommentCLients";
+
 
 function App() {
   return (
@@ -28,10 +31,14 @@ function App() {
           <ProductBar />
         </div>
       </div>
-      <ProductMain />
-
-
-
+      <div className="productMainApp">
+        <ProductMain />
+      </div>
+      <BigBanner />
+      <FooterProduct />
+      <div className="CommentClientDot">
+        < CommentClient />
+      </div>
     </div>
   );
 }

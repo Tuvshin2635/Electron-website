@@ -124,7 +124,7 @@ export const mainProduct = [
         price:"$430.00",
     },
     {
-        thumbnail:"images/product08.jpg",
+        thumbnail:"images/product03.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$230.00",
     },
@@ -144,7 +144,7 @@ export const mainProduct = [
         price:"$430.00",
     },
     {
-        thumbnail:"images/product08.jpg",
+        thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$230.00",
     },
@@ -164,7 +164,7 @@ export const mainProduct = [
         price:"$430.00",
     },
     {
-        thumbnail:"images/product08.jpg",
+        thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$230.00",
     },
@@ -174,3 +174,66 @@ export const mainProduct = [
         price:"$130.00",
     },
 ]
+
+export const commentClient = [
+    {
+        avatar: "images/Ellipse01.jpg",
+        title: "Savannah Nguyen",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+    {
+        avatar: "images/Ellipse02.jpg",
+        title: "Savannah Nguyen",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+    {
+        avatar: "images/Ellipse03.jpg",
+        title: "Savannah Nguyen",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+    {
+        avatar: "images/avatar01.jpg",
+        title: "Yalalt",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+    {
+        avatar: "images/avatar02.jpg",
+        title: "Sod-Gerel",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+    {
+        avatar: "images/avatar03.jpg",
+        title: "Munkhbaatar",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+    {
+        avatar: "images/avatar02.jpg",
+        title: "Sod-Gerel",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+    {
+        avatar: "images/avatar03.jpg",
+        title: "Munkhbaatar",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque."
+    },
+]
+
+
+ export const brands = [
+    {
+        logo: "images/brand01.jpg"
+    },
+    {
+        logo: "images/brand02.jpg"
+    },
+    {
+        logo: "images/brand03.jpg"
+    },
+    {
+        logo: "images/brand04.jpg"
+    },
+    {
+        logo: "images/brand05.jpg"
+    },
+
+ ]
