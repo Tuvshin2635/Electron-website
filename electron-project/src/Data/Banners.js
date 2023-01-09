@@ -237,3 +237,33 @@ export const commentClient = [
     },
 
  ]
+export const latestPart = [
+    {
+        thumbnail: "images/latest01.jpg",
+        date: " 22 oct 2021",
+        title: " Who avoids a pain that produces?",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.",
+        comment: "By spacing tech"
+    } ,
+    {
+        thumbnail: "images/latest02.jpg",
+        date: " 22 oct 2021",
+        title: " Who avoids a pain that produces?",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.",
+        comment: "By spacing tech"
+    } ,
+    {
+        thumbnail: "images/bannerphoto04.jpg",
+        date: " 22 oct 2021",
+        title: " Who avoids a pain that produces?",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.",
+        comment: "By spacing tech"
+    } ,
+    {
+        thumbnail: "images/bannerphoto03.jpg",
+        date: " 22 oct 2021",
+        title: " Who avoids a pain that produces?",
+        description: "Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.",
+        comment: "By spacing tech"
+    } ,
+]
