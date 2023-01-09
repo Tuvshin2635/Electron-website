@@ -12,7 +12,8 @@ import BigBanner from "./Components/BigBanner";
 import FooterProduct from "./Components/ProductFooter";
 import CommentClient from "./Components/CommentCLients";
 import SponsorName from "./Components/Sponsor";
-
+// import HandleUpVote from "./Components/HandleUPVote";
+import LatestNews from "./Components/Latest";
 
 function App() {
   return (
@@ -27,7 +28,10 @@ function App() {
         <SecondHead />
       </div>
       <div className="popularProduct">
-        <div> <h1> Popular Product</h1> </div>
+        <div>
+          {" "}
+          <h1> Popular Product</h1>{" "}
+        </div>
         <div className="productBarButton">
           <ProductBar />
         </div>
@@ -38,10 +42,14 @@ function App() {
       <BigBanner />
       <FooterProduct />
       <div className="CommentClientDot">
-        < CommentClient />
+        <CommentClient />
       </div>
       <div className="gadnatalaaraashde">
         <SponsorName />
+      </div>
+      {/* <HandleUpVote /> */}
+      <div id="latestContainer">
+        <LatestNews />
       </div>
     </div>
   );

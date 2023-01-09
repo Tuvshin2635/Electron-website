@@ -1,27 +1,30 @@
-
 import { mainProduct } from "../Data/Banners";
 import AliceCarousel from "react-alice-carousel";
-
+import HandleUpVote from "./HandleUPVote";
 
 function ProductMain() {
-    const ProductMains = mainProduct.map((data) => {
-        return (
-            <div className="productMain">
-                <img src={data.thumbnail} />
-                <p> {data.title}</p>
-                <p> {data.price}</p>
-            </div>
-        )
-    })
+  const ProductMains = mainProduct.map((data) => {
     return (
-        <AliceCarousel
-   
-            responsive={{
-                1024: { items: 4 },
-            }}
-
-        >{ProductMains}
-        </AliceCarousel>
-    )
+      <div className="productMain">
+        <img
+          onClick={() => {
+            HandleUpVote(data);
+          }}
+          src={data.thumbnail}
+        />
+        <p> {data.title}</p>
+        <p> {data.price}</p>
+      </div>
+    );
+  });
+  return (
+    <AliceCarousel
+      responsive={{
+        1024: { items: 4 },
+      }}
+    >
+      {ProductMains}
+    </AliceCarousel>
+  );
 }
 export default ProductMain;
