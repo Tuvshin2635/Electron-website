@@ -4,28 +4,25 @@ import { bannerList } from "../Data/Banners";
 
 function SecondHead() {
   const headadverTwo = bannerList.map((data) => {
-    const nextData = data.products.map((d) => {
-      return (
+    return (
         <div className="secondHeader">
-          <img className="secondHeadImg" src={d.image} />
+          <img className="secondHeadImg" src={data.image} />
           <div className="secondHeadTitle">
-            <h1> {d.title} </h1>
-            <h1> {d.description} </h1>
+            <h1> {data.title} </h1>
+            <h1> {data.description} </h1>
           </div>
-        </div>
-      );
-    });
-    return nextData;
+      </div>
+    );
   });
   return (
-    <AliceCarousel className="taslax"
-      disableDotsControls="true"
+    <AliceCarousel
+      id="smallBannerSlider"
       responsive={{
-        100: { items: 1 },
-      }} >
+        1024: { items: 3 },
+      }}
+    >
       {headadverTwo}
     </AliceCarousel>
   );
 }
 export default SecondHead;
-

@@ -27,9 +27,7 @@ function App() {
       <div className="head-advertisment">
         <HeadAdvertisment />
       </div>
-      <div className="secondHead2">
         <SecondHead />
-      </div>
       <div className="popularProduct">
         <div>
           {" "}

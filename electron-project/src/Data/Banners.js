@@ -1,6 +1,4 @@
-export const bannerList = [{
-    products:
-        [
+export const bannerList = [
             {
                 title: "Speaker",
                 image: "images/bannerphoto01.jpg",
@@ -16,33 +14,27 @@ export const bannerList = [{
                 image: "images/bannerphoto02.jpg",
                 description: "(6 items)",
             },
-            // {
-            //   title: "DSLR camera",
-            //   image: "images/product01.jpg",
-            //   description: "(6 items)",
-            // },
-            // {
-            //   title: "DSLR camera",
-            //   image: "images/product02.jpg",
-            //   description: "(6 items)",
-            // },
-            // {
-            //   title: "Desktop & Laptop",
-            //   image: "images/product03.jpg",
-            //   description: "(6 items)",
-            // },
-            // {
-            //   title: "DSLR camera",
-            //   image: "images/product04.jpg",
-            //   description: "(6 items)",
-            // },
+            {
+              title: "DSLR camera",
+              image: "images/product01.jpg",
+              description: "(6 items)",
+            },
+            {
+              title: "DSLR camera",
+              image: "images/product02.jpg",
+              description: "(6 items)",
+            },
+            {
+              title: "Desktop & Laptop",
+              image: "images/product03.jpg",
+              description: "(6 items)",
+            },
+            {
+              title: "DSLR camera",
+              image: "images/product04.jpg",
+              description: "(6 items)",
+            },
         ]
-}
-
-
-
-];
-
 export const hero = [
     {
         img: "images/bannerphoto00.jpg",

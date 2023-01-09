@@ -135,11 +135,6 @@ input {
 
 /* small banner heseg */
 
-.smallBanner {
-  background-color: gold;
-  width: 500px;
-}
-
 .head-advertisment .alice-carousel__dots {
   width: 120px;
   position: absolute;
@@ -155,14 +150,14 @@ input {
 }
 
 /* second head banner css */
+#smallBannerSlider {
+  display: flex;
+  border:  2px solid red;
+}
 
 .secondHeader {
   display: flex;
   justify-content: space-evenly;
-  /* flex-flow: wrap; */
-  /* flex-wrap: wrap; */
-  /* background-color: #eda415; */
-  /* gap: 20px; */
   width: 380px;
   height: 148px;
   border: 1px solid #a5a5a5;
@@ -171,16 +166,10 @@ input {
   margin-left: 60px;
 }
 
-.taslax {
-  background-color: red;
-}
-
 .secondHeader img {
-  /* width: 154px; */
   height: 94px;
   margin: 20px 0px 0px 10px;
   border-radius: 30px;
-  /* border: 1px solid #A5A5A5; */
 }
 
 .secondHeadTitle h1 {
@@ -197,7 +186,6 @@ input {
   justify-content: space-evenly;
   width: 1440px;
   height: 230px;
-  /* border: 3px solid black; */
 }
 
 .alice-carousel__next-btn-item span {
@@ -232,7 +220,6 @@ input {
 /* Popular product bar parts */
 
 .productBar button {
-  /* cursor: pointer; */
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -332,7 +319,6 @@ input {
   align-items: center;
   padding: 0px;
   gap: 62px;
-  /* position: absolute; */
   width: 803px;
   height: 505px;
   left: 51px;
@@ -368,7 +354,6 @@ input {
   align-items: center;
   padding: 0px 0px 0px 25.572px;
   gap: 4.92px;
-  /* isolation: isolate; */
   width: 204.58px;
   height: 60px;
   background: #87bcd9;
@@ -382,10 +367,8 @@ input {
   align-items: center;
   padding: 0px;
   gap: 15.84px;
-  /* position: absolute; */
   width: 493px;
   height: 241px;
-  /* left: 886px; */
   border: 0.983537px solid #b6b6b6;
   border-radius: 19.6707px;
   margin-top: 95px;
@@ -402,18 +385,14 @@ input {
 }
 
 .footPro002 {
-  /* margin-top: 355px; */
   display: flex;
-  /* gap: 10px; */
   justify-content: space-evenly;
   justify-content: center;
   align-items: center;
   padding: 0px;
   gap: 15.84px;
-  /* position: absolute; */
   width: 493px;
   height: 241px;
-  /* left: 886px; */
   border: 0.983537px solid #b6b6b6;
   border-radius: 19.6707px;
 }
@@ -482,27 +461,10 @@ input {
 
 /* Client comment parts  */
 
-.comment {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 10px;
-  margin-top: 30px; */
-  /* position: absolute; */
-  /* width: 1318.37px; */
-  /* height: 242.1px; */
-  /* left: 61px; */
-  /* top: 3113px; */
-}
-
 .commentNameAvatar {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 100.02px; */
-  /* height: 100.02px; */
   gap: 40px;
 }
 
@@ -555,12 +517,6 @@ input {
   color: red;
   background-color: transparent;
   background-color: #eda415;
-  /* color: #EDA415; */
-  /* background-color: #EDA415; */
-}
-
-.CommentClientDot .alice-carousel__dots li:active {
-  /* background-color: #EDA415; */
 }
 
 .alice-carousel__dots-item:not(.__custom):hover,
@@ -578,9 +534,6 @@ input {
   gap: 55.3px;
   width: 1317px;
   height: 136px;
-  /* left: 60px; */
-  /* top: 3476px; */
-
   background: #e2f4ff;
 }
 
@@ -616,7 +569,6 @@ input {
   display: flex;
   margin-top: 30px;
   margin-left: 60px;
-  /* margin-bottom: 0px; */
 }
 
 .latestText h1 {
