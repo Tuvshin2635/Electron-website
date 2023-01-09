@@ -1,4 +1,5 @@
 import React from "react";
+import AliceCarousel from "react-alice-carousel";
 import { latestPart } from "../Data/Banners";
 
 function LatestNews() {
@@ -19,6 +20,15 @@ function LatestNews() {
       </div>
     );
   });
-  return newsLatest;
+  return (
+    <AliceCarousel
+      disableButtonsControls="true"
+      responsive={{
+        1024: { items: 2 },
+      }}
+    >
+      {newsLatest}
+    </AliceCarousel>
+  )
 }
 export default LatestNews;

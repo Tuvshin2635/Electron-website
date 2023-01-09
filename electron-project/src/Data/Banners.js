@@ -274,3 +274,30 @@ export const latestPart = [
         comment: "By spacing tech"
     } ,
 ]
+
+export const footerData = [
+    {
+        title: "Find product",
+        title01: "Brownze arnold",
+        title02: "Chronograph blue",
+        title03: "Smart phones",
+        title04: "Automatic watch",
+        title05: "Hair straighteners"
+    },
+    {
+        title: "Get help",
+        title01: "About us",
+        title02: "Contact us",
+        title03: "Return policy",
+        title04: "Privacy policy",
+        title05: "Payment policy"
+    },
+    {
+        title: "About us",
+        title01: "News",
+        title02: "Service",
+        title03: "Our policy",
+        title04: "Customer care",
+        title05: "Faq's"
+    },
+]

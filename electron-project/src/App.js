@@ -14,6 +14,9 @@ import CommentClient from "./Components/CommentCLients";
 import SponsorName from "./Components/Sponsor";
 // import HandleUpVote from "./Components/HandleUPVote";
 import LatestNews from "./Components/Latest";
+import Footer from "./Components/Footer";
+import FooterSecond from "./Components/FooterPart3";
+import FooterPart2 from "./Components/FooterPart2";
 
 function App() {
   return (
@@ -48,8 +51,19 @@ function App() {
         <SponsorName />
       </div>
       {/* <HandleUpVote /> */}
+      <div className="textLatest">
+          <p> Latest news </p>
+          <p> View all</p>
+        </div>
       <div id="latestContainer">
+       
         <LatestNews />
+      </div>
+      <Footer />
+      <div className="footerPart3Container">
+      <FooterPart2 />
+      <FooterSecond />
+
       </div>
     </div>
   );
