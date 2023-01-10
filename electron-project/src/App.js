@@ -7,6 +7,7 @@ import HeadHelp from "./Components/HeadHelp";
 import HeadAdvertisment from "./Components/HeadAdvertisment";
 import SecondHead from "./Components/SecondHead";
 import ProductBar from "./Components/ProductBar";
+
 import ProductMain from "./Components/MainProduct";
 import BigBanner from "./Components/BigBanner";
 import FooterProduct from "./Components/ProductFooter";
@@ -38,6 +39,7 @@ function App() {
         </div>
       </div>
       <div className="productMainApp">
+        {/* <ProductMain /> */}
         <ProductMain />
       </div>
       <BigBanner />
