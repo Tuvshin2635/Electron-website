@@ -1,19 +1,19 @@
 import { mainProduct } from "../Data/Banners";
 import AliceCarousel from "react-alice-carousel";
 import { Rating } from "react-simple-star-rating";
-import { useState } from "react";
+// import { useState } from "react";
 
 
 function ProductMain() {
 
-function HandleUPVote (data) {
-    setVotes(votes +1 )
-      if (stars > 5) {
-        setStars(0)
-      } else {
-        setStars(stars +1)
-      }
-  }
+// function HandleUPVote (data) {
+//     setVotes(votes +1 )
+//       if (stars > 5) {
+//         setStars(0)
+//       } else {
+//         setStars(stars +1)
+//       }
+//   }
 
 
   const ProductMains = mainProduct.map((data) => {
@@ -29,7 +29,7 @@ function HandleUPVote (data) {
           <div>
             <p className="productTitle"> {data.title}</p>
             <p className="productPrice"> {data.price}</p>
-            <span onClick={HandleUPVote}>
+            <span>
               {" "}
               <i id="starUp" class="bi bi-caret-up"></i>{" "}
             </span>
@@ -44,9 +44,9 @@ function HandleUPVote (data) {
             </p>
           </div>
         </div>
-        <Rating
+        {/* <Rating
           initialValue={data.rate}
-        />
+        /> */}
       </div>
     );
   });

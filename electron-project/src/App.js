@@ -19,50 +19,59 @@ import Footer from "./Components/Footer";
 import FooterSecond from "./Components/FooterPart3";
 import FooterPart2 from "./Components/FooterPart2";
 
+// Detail page 
+
+import MainDetailPage from "./Components/DetailMain";
+
 function App() {
   return (
-    <div className="header">
-      <HeadHelp />
-      <SearchBar />
-      <MainMenu />
-      <div className="head-advertisment">
-        <HeadAdvertisment />
-      </div>
+    <div>
+      <div className="header">
+        <HeadHelp />
+        <SearchBar />
+        <MainMenu />
+        <div className="head-advertisment">
+          <HeadAdvertisment />
+        </div>
         <SecondHead />
-      <div className="popularProduct">
-        <div>
-          {" "}
-          <h1> Popular Product</h1>{" "}
+        <div className="popularProduct">
+          <div>
+            {" "}
+            <h1> Popular Product</h1>{" "}
+          </div>
+          <div className="productBarButton">
+            <ProductBar />
+          </div>
         </div>
-        <div className="productBarButton">
-          <ProductBar />
+        <div className="productMainApp">
+          <ProductMain />
         </div>
-      </div>
-      <div className="productMainApp">
-        {/* <ProductMain /> */}
-        <ProductMain />
-      </div>
-      <BigBanner />
-      <FooterProduct />
-      <div className="CommentClientDot">
-        <CommentClient />
-      </div>
-      <div className="gadnatalaaraashde">
-        <SponsorName />
-      </div>
-      {/* <HandleUpVote /> */}
-      <div className="textLatest">
+        <BigBanner />
+        <FooterProduct />
+        <div className="CommentClientDot">
+          <CommentClient />
+        </div>
+        <div className="gadnatalaaraashde">
+          <SponsorName />
+        </div>
+        {/* <HandleUpVote /> */}
+        <div className="textLatest">
           <p> Latest news </p>
           <p> View all</p>
         </div>
-      <div id="latestContainer">
-       
-        <LatestNews />
+        <div id="latestContainer">
+          <LatestNews />
+        </div>
+        <Footer />
+        <div className="footerPart3Container">
+          <FooterPart2 />
+          <FooterSecond />
+        </div>
       </div>
-      <Footer />
-      <div className="footerPart3Container">
-      <FooterPart2 />
-      <FooterSecond />
+      <div className="detail">
+        <HeadHelp />
+        <SearchBar />
+        <MainMenu />
 
       </div>
     </div>
