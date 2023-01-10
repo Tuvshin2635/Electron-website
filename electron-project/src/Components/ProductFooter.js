@@ -12,7 +12,7 @@ function FooterProduct() {
                     <div id="footerProduct">
                         <h1 className="titleFooterProduct"> JBL bar 2.1 deep bass </h1>
                         <p className="priceFooterProduct"> $11,70</p>
-                        <button id="footerProductBtn"> Add to Cart <i class="bi bi-cart"></i> </button>
+                        <button id="footerProductBtn"> <a>Add to Cart </a> <span><i class="bi bi-cart"></i></span> </button>
                     </div>
                 </div>
                 <div className="footProduct02">

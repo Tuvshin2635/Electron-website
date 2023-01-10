@@ -152,7 +152,7 @@ input {
 /* second head banner css */
 #smallBannerSlider {
   display: flex;
-  border:  2px solid red;
+  border: 2px solid red;
 }
 
 .secondHeader {
@@ -244,15 +244,20 @@ input {
 }
 
 /* Main Product parts */
+.productMainApp {
+  /* width: calc(100%-8) -20px; */
+  /* width: calc(100% / 2) - 20px; */
+
+}
 
 .productMain {
+
   margin-top: 40px;
   margin-left: 30px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   padding: 0px;
   gap: 9.84px;
   width: 308.83px;
@@ -261,10 +266,48 @@ input {
   border-radius: 19.6707px;
 }
 
+.productMain img {
+  width: 187px;
+  margin-left: 30px;
+  /* height: 170px; */
+}
+.productTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.0939px;
+  line-height: 26px;
+  color: #003f62;
+  margin-left: 30px;
+}
+.productPrice {
+  margin-left: 30px;
+
+  font-weight: 600;
+  font-size: 17.0939px;
+  line-height: 26px;
+  color: #4a4a4a;
+}
+.productCart {
+  margin-top: 50px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 50px;
+  padding: 3px 0;
+  padding-left: 8px;
+}
+#ProductInfo {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* Big Banner parts */
 
 .bigBanner {
   margin-left: 64px;
+  margin-bottom: 30px;
 }
 
 .bigBannersText button {
@@ -277,7 +320,6 @@ input {
 }
 
 .bigBannersText {
-  position: absolute;
   margin-top: -350px;
   margin-left: 800px;
   text-align: center;
@@ -359,6 +401,23 @@ input {
   background: #87bcd9;
   border-radius: 20px;
 }
+#footerProductBtn a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.7366px;
+  line-height: 24px;
+  color: #272727;
+}
+#footerProductBtn span {
+  margin-left: 20px;
+  background-color: #eda415;
+  color: white;
+  font-size: 20px;
+  padding-top: 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
 
 .footPro001 {
   display: flex;
@@ -382,6 +441,15 @@ input {
   font-size: 17.0939px;
   line-height: 26px;
   color: #003f62;
+}
+.footText01 p,
+.footText02 p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.0939px;
+  line-height: 26px;
+  color: #4a4a4a;
 }
 
 .footPro002 {
@@ -682,6 +750,12 @@ input {
 .footerWhiteParts .bi {
   color: #eda415;
   font-size: 60px;
+}
+.footerWhiteParts .sentBtn .bi {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 640px;
+  color: black;
 }
 
 /* footer part3  */

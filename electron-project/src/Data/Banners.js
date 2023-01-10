@@ -80,97 +80,128 @@ export const genre = [
 ]
 
 export const mainProduct = [
-    {
-        id: "111",
-        thumbnail:"images/product01.jpg",
-        title: "Camera",
-        price:"$230.00",
-    },
+    // {
+    //     id: "111",
+    //     thumbnail:"images/product01.jpg",
+    //     title: "Camera",
+    //     price:"$230.00",
+    //     rate: 1
+    // },
     {
         id: "222",
         thumbnail:"images/product02.jpg",
         title: "Wireless headphones",
         price:"$99.00",
+        rate: 1
+
     },
     {
         id: "333",
         thumbnail:"images/product03.jpg",
         title: "Tablet as a laptop",
         price:"$300.00",
+        rate: 1
+
     },
     {
         id: "444",
         thumbnail:"images/product04.jpg",
         title: "Tablet as a laptop",
         price:"$530.00",
+        rate: 4
+
     },
     {
         id: "555",
         thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$130.00",
+        rate: 2
+
     },
     {
         id: "666",
         thumbnail:"images/product06.jpg",
         title: "Tablet as a laptop",
         price:"$530.00",
+        rate: 2
+
     },
     {
         id: "777",
         thumbnail:"images/product07.jpg",
         title: "Tablet as a laptop",
         price:"$430.00",
+        rate: 3
+
     },
     {
         thumbnail:"images/product03.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$230.00",
+        rate: 3
+
     },
     {
         thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$130.00",
+        rate: 4
+
     },
     {
         thumbnail:"images/product06.jpg",
         title: "Tablet as a laptop",
         price:"$530.00",
+        rate: 5
     },
     {
         thumbnail:"images/product07.jpg",
         title: "Tablet as a laptop",
         price:"$430.00",
+        rate: 4
+
     },
     {
         thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$230.00",
+        rate: 3
     },
     {
         thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$130.00",
+        rate: 2
+
     },
     {
         thumbnail:"images/product06.jpg",
         title: "Tablet as a laptop",
         price:"$530.00",
+        rate: 1
+
     },
     {
         thumbnail:"images/product07.jpg",
         title: "Tablet as a laptop",
         price:"$430.00",
+        rate: 2
+
     },
     {
         thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$230.00",
+        rate: 3
+
     },
     {
         thumbnail:"images/product05.jpg",
         title: "JBL bar 2.1 deep bass",
         price:"$130.00",
+        rate: 5
+
     },
 ]
 
