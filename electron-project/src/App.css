@@ -41,6 +41,10 @@
   /* padding: 22px 30px; */
 }
 
+.bi .bi-cart {
+  color:  red;
+}
+
 input {
   width: 420px;
   height: 58px;

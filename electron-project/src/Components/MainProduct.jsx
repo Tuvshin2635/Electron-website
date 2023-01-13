@@ -11,7 +11,8 @@ function ProductMain(props) {
   // const [cart, setCart] = useState(0);
   const handleCart = (props) => {
     console.log({ handleCart });
-    props.setCartShop(props.cartShop.data.title);
+    props.setCartShop(props.cartShops);
+    // console.log(props.CartShop);
   };
 
   const ProductMains = mainProduct.map((data) => {
@@ -34,8 +35,8 @@ function ProductMain(props) {
             <span></span>
           </div>
           <div>
-            <p className="productCart" onClick={handleCart}>
-              <i class="bi bi-cart"></i>{" "}
+            <p className="productCart">
+              <i class="bi bi-cart" onClick={handleCart}></i>
             </p>
           </div>
         </div>

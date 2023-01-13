@@ -1,15 +1,18 @@
 import React from "react";
 import "./SearchBar.css";
 
-function cartContainer() {
-  let cartBoxContainer = document.getElementById("cartBox");
-  cartBoxContainer.style = "display:block";
-  console.log("cart clicked");
-
-}
 // cartBoxContainer
 
-function SearchBar({ placeholder, data, data2 }) {
+function SearchBar({ placeholder, data}) {
+  function cartContainer() {
+    let cartBoxContainer = document.getElementById("cartBox");
+    if (cartBoxContainer.style != "display:block") {
+      cartBoxContainer.style = "display:block";
+    } else {
+      cartBoxContainer.style = "display:none";
+    }
+  }
+
   return (
     <div className="search">
       <div>
@@ -33,11 +36,12 @@ function SearchBar({ placeholder, data, data2 }) {
           </i>
         </p>
         <p>
-          <i class="bi bi-cart">
-            <div id="cartBox" onClick={cartContainer}>
-              {}
+        <i class="bi bi-cart" onClick={cartContainer} >
+            <div id="cartBox"  >
+                { }
+              
             </div>
-          </i>{" "}
+          </i>
         </p>
       </div>
     </div>
