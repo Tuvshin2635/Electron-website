@@ -1,34 +1,31 @@
 import "./App.css";
 import SearchBar from "./Components/SearchBar";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
 import MainMenu from "./Components/MainMenu";
 import HeadHelp from "./Components/HeadHelp";
 import HeadAdvertisment from "./Components/HeadAdvertisment";
 import SecondHead from "./Components/SecondHead";
 import ProductBar from "./Components/ProductBar";
-
 import ProductMain from "./Components/MainProduct";
 import BigBanner from "./Components/BigBanner";
 import FooterProduct from "./Components/ProductFooter";
 import CommentClient from "./Components/CommentCLients";
 import SponsorName from "./Components/Sponsor";
-// import HandleUpVote from "./Components/HandleUPVote";
 import LatestNews from "./Components/Latest";
 import Footer from "./Components/Footer";
 import FooterSecond from "./Components/FooterPart3";
 import FooterPart2 from "./Components/FooterPart2";
-
-// Detail page 
-
-import MainDetailPage from "./Components/DetailMain";
+import { useState } from "react";
 
 function App() {
+  const [wishlist, setWishlist] = useState(0);
+  const [cartShop, setCartShop] = useState(0);
+
   return (
     <div>
       <div className="header">
         <HeadHelp />
-        <SearchBar />
+        <SearchBar data={wishlist} data2={setCartShop} />
         <MainMenu />
         <div className="head-advertisment">
           <HeadAdvertisment />
@@ -44,7 +41,12 @@ function App() {
           </div>
         </div>
         <div className="productMainApp">
-          <ProductMain />
+          <ProductMain
+            wishlist={wishlist}
+            setWishlist={setWishlist}
+            cartShop={cartShop}
+            setCartShop={setCartShop}
+          />
         </div>
         <BigBanner />
         <FooterProduct />
@@ -72,7 +74,6 @@ function App() {
         <HeadHelp />
         <SearchBar />
         <MainMenu />
-
       </div>
     </div>
   );

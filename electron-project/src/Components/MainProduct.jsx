@@ -1,52 +1,45 @@
 import { mainProduct } from "../Data/Banners";
 import AliceCarousel from "react-alice-carousel";
 import { Rating } from "react-simple-star-rating";
-// import { useState } from "react";
+import { useState } from "react";
 
+function ProductMain(props) {
+  const handleClick = () => {
+    props.setWishlist(props.wishlist + 1);
+  };
 
-function ProductMain() {
-
-// function HandleUPVote (data) {
-//     setVotes(votes +1 )
-//       if (stars > 5) {
-//         setStars(0)
-//       } else {
-//         setStars(stars +1)
-//       }
-//   }
-
+  // const [cart, setCart] = useState(0);
+  const handleCart = (props) => {
+    console.log({ handleCart });
+    props.setCartShop(props.cartShop.data.title);
+  };
 
   const ProductMains = mainProduct.map((data) => {
     return (
       <div className="productMain">
-        <img
-          // onClick={() => {
-          //   HandleUpVote(data);
-          // }}
-          src={data.thumbnail}
-        />
+        <div className="heartImg">
+          <img src={data.thumbnail} />
+          <div>
+            {" "}
+            <p onClick={handleClick}>
+              {" "}
+              <i class="bi bi-heart-fill"></i>{" "}
+            </p>
+          </div>
+        </div>
         <div id="ProductInfo">
           <div>
             <p className="productTitle"> {data.title}</p>
             <p className="productPrice"> {data.price}</p>
-            <span>
-              {" "}
-              <i id="starUp" class="bi bi-caret-up"></i>{" "}
-            </span>
-            <span>
-              {" "}
-              <i id="stardown" class="bi bi-caret-down-fill"></i>{" "}
-            </span>
+            <span></span>
           </div>
           <div>
-            <p className="productCart">
+            <p className="productCart" onClick={handleCart}>
               <i class="bi bi-cart"></i>{" "}
             </p>
           </div>
         </div>
-        {/* <Rating
-          initialValue={data.rate}
-        /> */}
+        <Rating initialValue={data.rate} />
       </div>
     );
   });
