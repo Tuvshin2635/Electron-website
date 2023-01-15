@@ -2,6 +2,7 @@ import { mainProduct } from "../Data/Banners";
 import AliceCarousel from "react-alice-carousel";
 import { Rating } from "react-simple-star-rating";
 import { useState } from "react";
+import ModalProduct from "./Component-Detail/ModalProduct";
 
 function ProductMain(props) {
   const handleClick = () => {
@@ -19,7 +20,8 @@ function ProductMain(props) {
     return (
       <div className="productMain">
         <div className="heartImg">
-          <img src={data.thumbnail} />
+          <button onClick={<ModalProduct/>}> </button>
+          <img src={data.thumbnail}  />
           <div>
             {" "}
             <p onClick={handleClick}>

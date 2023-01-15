@@ -16,6 +16,7 @@ import Footer from "./Components/Footer";
 import FooterSecond from "./Components/FooterPart3";
 import FooterPart2 from "./Components/FooterPart2";
 import { useState } from "react";
+import ModalProduct from "./Components/Component-Detail/ModalProduct";
 
 function App() {
   const [wishlist, setWishlist] = useState(0);
@@ -41,6 +42,7 @@ function App() {
           </div>
         </div>
         <div className="productMainApp">
+          {/* <ModalProduct /> */}
           <ProductMain
             wishlist={wishlist}
             setWishlist={setWishlist}
