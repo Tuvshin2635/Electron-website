@@ -1,32 +1,26 @@
 import { mainProduct } from "../Data/Banners";
 import AliceCarousel from "react-alice-carousel";
 import { Rating } from "react-simple-star-rating";
-import { useState } from "react";
-import ModalProduct from "./Component-Detail/ModalProduct";
 
 function ProductMain(props) {
   const handleClick = () => {
     props.setWishlist(props.wishlist + 1);
   };
 
-  // const [cart, setCart] = useState(0);
   const handleCart = (props) => {
-    console.log({ handleCart });
+    // console.log({ handleCart });
     props.setCartShop(props.cartShops);
-    // console.log(props.CartShop);
   };
+
 
   const ProductMains = mainProduct.map((data) => {
     return (
       <div className="productMain">
         <div className="heartImg">
-          <button onClick={<ModalProduct/>}> </button>
           <img src={data.thumbnail}  />
           <div>
-            {" "}
             <p onClick={handleClick}>
-              {" "}
-              <i class="bi bi-heart-fill"></i>{" "}
+              <i class="bi bi-heart-fill"></i>
             </p>
           </div>
         </div>
@@ -38,7 +32,9 @@ function ProductMain(props) {
           </div>
           <div>
             <p className="productCart">
-              <i class="bi bi-cart" onClick={handleCart}></i>
+              <i class="bi bi-cart" 
+              // onClick={handleCart}
+              ></i>
             </p>
           </div>
         </div>

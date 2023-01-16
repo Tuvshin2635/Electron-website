@@ -1,11 +1,5 @@
-// import "./App.css";
 import "../App.css";
-
 import { useState } from "react";
-// import {Routes, Route, Link} from "react-router-dom";
-import HeadHelp from "../Components/HeadHelp";
-import SearchBar from "../Components/SearchBar";
-import MainMenu from "../Components/MainMenu";
 import HeadAdvertisment from "../Components/HeadAdvertisment";
 import SecondHead from "../Components/SecondHead";
 import ProductBar from "../Components/ProductBar";
@@ -15,16 +9,17 @@ import FooterProduct from "../Components/ProductFooter";
 import CommentClient from "../Components/CommentCLients";
 import SponsorName from "../Components/Sponsor";
 import LatestNews from "../Components/Latest";
-import FooterPart2 from "../Components/FooterPart2";
-import FooterSecond from "../Components/FooterPart3";
-import Footer from "../Components/Footer";
+import SearchBar from "../Components/SearchBar";
 
 export default function MainPage() {
-  const [wishlist, setWishlist] = useState(0);
   const [cartShop, setCartShop] = useState(0);
+  const [wishlist, setWishlist] = useState(0);
 
   return (
+
     <div className="header">
+      {/* <SearchBar data={wishlist} data2={setCartShop} /> */}
+
       <div className="head-advertisment">
         <HeadAdvertisment />
       </div>
@@ -37,6 +32,7 @@ export default function MainPage() {
           <ProductBar />
         </div>
       </div>
+      
       <div className="productMainApp">
         <ProductMain
           wishlist={wishlist}
@@ -61,11 +57,7 @@ export default function MainPage() {
       <div id="latestContainer">
         <LatestNews />
       </div>
-      <Footer />
-      <div className="footerPart3Container">
-        <FooterPart2 />
-        <FooterSecond />
-      </div>
+      
     </div>
   );
 }

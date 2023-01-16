@@ -7,21 +7,37 @@ import { useState } from "react";
 import SingIn from "./links/SignIn";
 import { Routes, Route, Link } from "react-router-dom";
 import MainPage from "./links/Home";
+import Footer from "./Components/Footer";
+import FooterPart2 from "./Components/FooterPart2";
+import FooterSecond from "./Components/FooterPart3";
+import Cart from "./links/Cart";
+// import {MainPage, setWishlist, cartShop} from './links/Home';
 
 function App() {
+
+  
+
   const [wishlist, setWishlist] = useState(0);
   const [cartShop, setCartShop] = useState(0);
 
   return (
     <div>
       <HeadHelp />
-      <SearchBar data={wishlist} data2={setCartShop} />
+      <SearchBar  data={wishlist} data2={setCartShop}  />
       <MainMenu />
 
       <Routes>
         <Route path="/SingIn" element={<SingIn />} />
-        <Route path="/MainPage" element={<MainPage />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/MainPage" element={<MainPage />} 
+         />
       </Routes>
+
+      <Footer />
+      <div className="footerPart3Container">
+        <FooterPart2 />
+        <FooterSecond />
+      </div>
     </div>
   );
 }

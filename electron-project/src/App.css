@@ -42,7 +42,7 @@
 }
 
 .bi .bi-cart {
-  color:  red;
+  color: red;
 }
 
 input {
@@ -77,10 +77,9 @@ input {
   height: 200px;
   display: none;
 }
-.hearthCart .bi{
+.hearthCart .bi {
   color: #eda415;
 }
-
 
 .too {
   color: white;
@@ -90,7 +89,6 @@ input {
   border-radius: 30px;
   padding: 3px 7px;
   margin-top: -16px;
-
 }
 
 /* HeadAdvertisment */
@@ -273,18 +271,17 @@ input {
 .productMainApp {
   /* width: calc(100%-8) -20px; */
   /* width: calc(100% / 2) - 20px; */
-
 }
-.heartImg{
+.heartImg {
   display: flex;
   justify-content: space-evenly;
 }
-.heartImg p{
+.heartImg p {
   font-size: 30px;
   color: #eda415;
 }
 
-.heartImg p:active{
+.heartImg p:active {
   /* font-size: 40px; */
   color: rgb(251, 255, 0);
   /* border-radius: 40px; */
@@ -292,10 +289,7 @@ input {
   /* padding: 5px; */
 }
 
-
-
 .productMain {
-
   margin-top: 40px;
   margin-left: 30px;
   display: flex;
@@ -845,4 +839,61 @@ input {
 .footerParts2 .bi {
   color: #3b3b3b;
   font-size: 30px;
+}
+
+/* sign up parts  */
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 39%;
+  width: 770px;
+  height: 500px;
+}
+
+.signUpForm input {
+  /* margin-left: 20%; */
+
+  align-items: center;
+  padding: 10px 14px;
+  gap: 8px;
+  width: 360px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.signUpForm label {
+  /* margin-left: 27%; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+
+.signUpForm button {
+  /* margin-left: 27%; */
+  align-items: center;
+  padding: 10px 18px;
+  gap: 8px;
+  width: 360px;
+  height: 44px;
+  background: #7f56d9;
+  border: 1px solid #7f56d9;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.signUpForm p {
+  margin-left: 8%;
+  margin-top: 10px;
+}
+
+.signUpTitle {
+  margin-top: 30px;
+  text-align: center;
 }
