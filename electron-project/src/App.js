@@ -1,22 +1,12 @@
 import "./App.css";
-import SearchBar from "./Components/SearchBar";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import SearchBar from "./Components/SearchBar";
 import MainMenu from "./Components/MainMenu";
 import HeadHelp from "./Components/HeadHelp";
-import HeadAdvertisment from "./Components/HeadAdvertisment";
-import SecondHead from "./Components/SecondHead";
-import ProductBar from "./Components/ProductBar";
-import ProductMain from "./Components/MainProduct";
-import BigBanner from "./Components/BigBanner";
-import FooterProduct from "./Components/ProductFooter";
-import CommentClient from "./Components/CommentCLients";
-import SponsorName from "./Components/Sponsor";
-import LatestNews from "./Components/Latest";
-import Footer from "./Components/Footer";
-import FooterSecond from "./Components/FooterPart3";
-import FooterPart2 from "./Components/FooterPart2";
 import { useState } from "react";
-import ModalProduct from "./Components/Component-Detail/ModalProduct";
+import SingIn from "./links/SignIn";
+import { Routes, Route, Link } from "react-router-dom";
+import MainPage from "./links/Home";
 
 function App() {
   const [wishlist, setWishlist] = useState(0);
@@ -24,7 +14,20 @@ function App() {
 
   return (
     <div>
-      <div className="header">
+      <HeadHelp />
+      <SearchBar data={wishlist} data2={setCartShop} />
+      <MainMenu />
+
+      <Routes>
+        <Route path="/SingIn" element={<SingIn />} />
+        <Route path="/MainPage" element={<MainPage />} />
+      </Routes>
+    </div>
+  );
+}
+export default App;
+
+      {/* <div className="header">
         <HeadHelp />
         <SearchBar data={wishlist} data2={setCartShop} />
         <MainMenu />
@@ -34,15 +37,14 @@ function App() {
         <SecondHead />
         <div className="popularProduct">
           <div>
-            {" "}
-            <h1> Popular Product</h1>{" "}
+            <h1> Popular Product</h1>
           </div>
           <div className="productBarButton">
             <ProductBar />
           </div>
         </div>
         <div className="productMainApp">
-          {/* <ModalProduct /> */}
+        <ModalProduct />
           <ProductMain
             wishlist={wishlist}
             setWishlist={setWishlist}
@@ -58,7 +60,7 @@ function App() {
         <div className="gadnatalaaraashde">
           <SponsorName />
         </div>
-        {/* <HandleUpVote /> */}
+
         <div className="textLatest">
           <p> Latest news </p>
           <p> View all</p>
@@ -71,13 +73,12 @@ function App() {
           <FooterPart2 />
           <FooterSecond />
         </div>
-      </div>
-      <div className="detail">
-        <HeadHelp />
-        <SearchBar />
-        <MainMenu />
-      </div>
-    </div>
-  );
-}
-export default App;
+      </div> */}
+
+
+
+// <div className="detail">
+// <HeadHelp />
+// <SearchBar />
+// <MainMenu />
+// </div>
