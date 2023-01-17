@@ -15,7 +15,7 @@ import Cart from "./links/Cart";
 
 function App() {
 
-  
+  const [cartItems, setCartItems] = useState([]);
 
   const [wishlist, setWishlist] = useState(0);
   const [cartShop, setCartShop] = useState(0);
@@ -28,7 +28,7 @@ function App() {
 
       <Routes>
         <Route path="/SingIn" element={<SingIn />} />
-        <Route path="/Cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/MainPage" element={<MainPage />} 
          />
       </Routes>
