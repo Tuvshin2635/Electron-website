@@ -1,15 +1,17 @@
 import React from "react";
-import SingIn from "../links/SignIn";
-import "./SearchBar.css";
-import { Routes, Route, Link } from "react-router-dom";
+import "../App.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 // cartBoxContainer
 
 function SearchBar({ placeholder, data, data2 }) {
-
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   console.log(search);
+
+  // function handleCartItems ()  {
+  //   setCartItems([...cartItems, { id: id, name: title }]);
+  // }
 
   // function cartContainer() {
 
@@ -29,8 +31,10 @@ function SearchBar({ placeholder, data, data2 }) {
         </Link>
       </div>
       <div className="searchInputs">
-        <input type="text" onChange={(data) => setSearch(data.target.value)}
-        // placeholder={placeholder} 
+        <input
+          type="text"
+          onChange={(data) => setSearch(data.target.value)}
+          // placeholder={placeholder}
         />
         <div className="searchButton">
           <button> Search </button>
@@ -50,8 +54,7 @@ function SearchBar({ placeholder, data, data2 }) {
         </p>
         <p>
           <Link to="/Cart">
-            <i class="bi bi-cart">
-            </i>
+            <i class="bi bi-cart"></i>
           </Link>
         </p>
       </div>
