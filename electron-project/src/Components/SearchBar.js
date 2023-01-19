@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
+
 import { useState } from "react";
 
 // cartBoxContainer
@@ -48,15 +49,18 @@ function SearchBar(props) {
             <i class="bi bi-person-plus"></i> Sign in
           </Link>
         </p>
+
+                
         <div class="ui compact menu">
           <div class="ui simple dropdown item">
-            {/* <p className="heartCart"> */}
             <i class="bi bi-heart-fill">{props.wishList.length}</i>
-            {/* </p> */}
+            
             <i class="dropdown icon"></i>
             <div class="menu">
-              {/* <div class="item"> */}
-              {props.wishList.map((w, index) => {
+             
+            </div>
+
+            {props.wishList.map((w, index) => {
                 return (
                   <div class="item">
                     {w.name}
@@ -64,8 +68,6 @@ function SearchBar(props) {
                       <button
                         class="negative ui button"
                         onClick={() => {
-                          //   console.log("remove");
-                          //   console.log(w.id);
                           props.setWishList(
                             props.wishList.filter((wish) => wish.id !== w.id) //ustgax
                           );
@@ -75,8 +77,6 @@ function SearchBar(props) {
                   </div>
                 );
               })}
-              {/* </div> */}
-            </div>
           </div>
         </div>
 

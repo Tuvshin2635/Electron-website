@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import FooterPart2 from "./Components/FooterPart2";
 import FooterSecond from "./Components/FooterPart3";
 import Cart from "./links/Cart";
+import { ShopContextProvider } from "./links/shop-context";
 // import {MainPage, setWishlist, cartShop} from './links/Home';
 
 function App() {
@@ -19,40 +20,42 @@ function App() {
   //wish
   const [wishList, setWishList] = useState([]);
   // cart
-  const [cartShop, setCartShop] = useState(0);
+  // const [cartShop, setCartShop] = useState(0);
 
   return (
     <div>
-      <HeadHelp />
-      <SearchBar
-        wishList={wishList}
-        setWishList={setWishList}
-        cartShop={cartShop}
-        setCartShop={setCartShop}
-      />
-      <MainMenu />
-
-      <Routes>
-        <Route path="/SingIn" element={<SingIn />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route
-          path="/MainPage"
-          element={
-            <MainPage
-              wishList={wishList}
-              setWishList={setWishList}
-              cartShop={cartShop}
-              setCartShop={setCartShop}
-            />
-          }
+      {/* <ShopContextProvider> */}
+        <HeadHelp />
+        <SearchBar
+          wishList={wishList}
+          setWishList={setWishList}
+          // cartShop={cartShop}
+          // setCartShop={setCartShop}
         />
-      </Routes>
+        <MainMenu />
 
-      <Footer />
-      <div className="footerPart3Container">
-        <FooterPart2 />
-        <FooterSecond />
-      </div>
+        <Routes>
+          <Route path="/SingIn" element={<SingIn />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route
+            path="/MainPage"
+            element={
+              <MainPage
+                wishList={wishList}
+                setWishList={setWishList}
+                // cartShop={cartShop}
+                // setCartShop={setCartShop}
+              />
+            }
+          />
+        </Routes>
+
+        <Footer />
+        <div className="footerPart3Container">
+          <FooterPart2 />
+          <FooterSecond />
+        </div>
+      {/* </ShopContextProvider> */}
     </div>
   );
 }
