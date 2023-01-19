@@ -3,24 +3,43 @@ import AliceCarousel from "react-alice-carousel";
 import { Rating } from "react-simple-star-rating";
 
 function ProductMain(props) {
-  const handleClick = () => {
-    props.setWishlist(props.wishlist + 1);
-  };
+  const ProductMains = mainProduct.map((data, index) => {
+    const liked = props.wishList.filter((wish) => wish.id === data.id)[0];
+    // console.log(liked);
 
-  const handleCart = (props) => {
-    // console.log({ handleCart });
-    props.setCartShop(props.cartShops);
-  };
+    const carted = props.cartShop.filter((cart) => cart.id === data.id)[0];
 
-
-  const ProductMains = mainProduct.map((data) => {
     return (
       <div className="productMain">
         <div className="heartImg">
-          <img src={data.thumbnail}  />
+          <img src={data.thumbnail} />
           <div>
-            <p onClick={handleClick}>
-              <i class="bi bi-heart-fill"></i>
+            <p>
+              <a
+                onClick={() => {
+                  console.log("heart clicked");
+                  // setLiked(!liked);
+
+                  if (!liked) {
+                    const likedProduct = {
+                      id: data.id,
+                      name: data.title,
+                      liked: true,
+                    };
+                    props.setWishList([...props.wishList, likedProduct]);
+                  } else {
+                    props.setWishList(
+                      props.wishList.filter((w) => w.id !== data.id)
+                    );
+                  }
+                }}
+              >
+                {liked ? (
+                  <i className="bi bi-heart-fill"></i>
+                ) : (
+                  <i className="bi bi-balloon-heart"></i>
+                )}
+              </a>
             </p>
           </div>
         </div>
@@ -32,9 +51,26 @@ function ProductMain(props) {
           </div>
           <div>
             <p className="productCart">
-              <i class="bi bi-cart" 
-              // onClick={handleCart}
-              ></i>
+              <a
+                onClick={() => {
+                  console.log("cart clicked");
+
+                  if (!carted) {
+                    const cartedProduct = {
+                      id: data.id,
+                      name: data.title,
+                      // liked: true,
+                    };
+                    props.setCartShop([...props.cartShop, cartedProduct]);
+                  } else {
+                    props.setCartShop(
+                      props.cartShop.filter((c) => c.id !== data.id)
+                    );
+                  }
+                }}
+              >
+                <i class="bi bi-cart"></i>
+              </a>
             </p>
           </div>
         </div>

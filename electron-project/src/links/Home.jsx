@@ -11,12 +11,11 @@ import SponsorName from "../Components/Sponsor";
 import LatestNews from "../Components/Latest";
 import SearchBar from "../Components/SearchBar";
 
-export default function MainPage() {
+export default function MainPage(props) {
   const [cartShop, setCartShop] = useState(0);
-  const [wishlist, setWishlist] = useState(0);
+  // const [wishList, setWishList] = useState(0);
 
   return (
-
     <div className="header">
       {/* <SearchBar data={wishlist} data2={setCartShop} /> */}
 
@@ -32,13 +31,13 @@ export default function MainPage() {
           <ProductBar />
         </div>
       </div>
-      
+
       <div className="productMainApp">
         <ProductMain
-          wishlist={wishlist}
-          setWishlist={setWishlist}
-          cartShop={cartShop}
-          setCartShop={setCartShop}
+          wishList={props.wishList}
+          setWishList={props.setWishList}
+          cartShop={props.cartShop}
+          setCartShop={props.setCartShop}
         />
       </div>
       <BigBanner />
@@ -57,7 +56,6 @@ export default function MainPage() {
       <div id="latestContainer">
         <LatestNews />
       </div>
-      
     </div>
   );
 }
