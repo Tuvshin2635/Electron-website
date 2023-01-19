@@ -5,9 +5,9 @@ import { useState } from "react";
 
 // cartBoxContainer
 
-function SearchBar({ placeholder, data, data2 }) {
-  const [search, setSearch] = useState("");
-  console.log(search);
+function SearchBar(props) {
+  // const [search, setSearch] = useState("");
+  // console.log(search);
 
   // function handleCartItems ()  {
   //   setCartItems([...cartItems, { id: id, name: title }]);
@@ -33,25 +33,53 @@ function SearchBar({ placeholder, data, data2 }) {
       <div className="searchInputs">
         <input
           type="text"
-          onChange={(data) => setSearch(data.target.value)}
+          // onChange={(data) => setSearch(data.target.value)}
           // placeholder={placeholder}
         />
         <div className="searchButton">
           <button> Search </button>
         </div>
       </div>
-      <div className="dataResult"></div>
+      {/* <div className="dataResult"></div> */}
+
       <div className="signInHeart">
         <p>
           <Link to="/SingIn">
             <i class="bi bi-person-plus"></i> Sign in
           </Link>
         </p>
-        <p className="heartCart">
-          <i class="bi bi-heart-fill">
-            <a className="too">{data}</a>
-          </i>
-        </p>
+        <div class="ui compact menu">
+          <div class="ui simple dropdown item">
+            {/* <p className="heartCart"> */}
+            <i class="bi bi-heart-fill">{props.wishList.length}</i>
+            {/* </p> */}
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              {/* <div class="item"> */}
+              {props.wishList.map((w, index) => {
+                return (
+                  <div class="item">
+                    {w.name}
+                    <a>
+                      <button
+                        class="negative ui button"
+                        onClick={() => {
+                          //   console.log("remove");
+                          //   console.log(w.id);
+                          props.setWishList(
+                            props.wishList.filter((wish) => wish.id !== w.id) //ustgax
+                          );
+                        }}
+                      ></button>
+                    </a>
+                  </div>
+                );
+              })}
+              {/* </div> */}
+            </div>
+          </div>
+        </div>
+
         <p>
           <Link to="/Cart">
             <i class="bi bi-cart"></i>

@@ -14,23 +14,38 @@ import Cart from "./links/Cart";
 // import {MainPage, setWishlist, cartShop} from './links/Home';
 
 function App() {
+  // const [cartItems, setCartItems] = useState([]);
 
-  const [cartItems, setCartItems] = useState([]);
-
-  const [wishlist, setWishlist] = useState(0);
+  //wish
+  const [wishList, setWishList] = useState([]);
+  // cart
   const [cartShop, setCartShop] = useState(0);
 
   return (
     <div>
       <HeadHelp />
-      <SearchBar  data={wishlist} data2={setCartShop}  />
+      <SearchBar
+        wishList={wishList}
+        setWishList={setWishList}
+        cartShop={cartShop}
+        setCartShop={setCartShop}
+      />
       <MainMenu />
 
       <Routes>
         <Route path="/SingIn" element={<SingIn />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/MainPage" element={<MainPage />} 
-         />
+        <Route
+          path="/MainPage"
+          element={
+            <MainPage
+              wishList={wishList}
+              setWishList={setWishList}
+              cartShop={cartShop}
+              setCartShop={setCartShop}
+            />
+          }
+        />
       </Routes>
 
       <Footer />
@@ -43,7 +58,8 @@ function App() {
 }
 export default App;
 
-      {/* <div className="header">
+{
+  /* <div className="header">
         <HeadHelp />
         <SearchBar data={wishlist} data2={setCartShop} />
         <MainMenu />
@@ -89,9 +105,8 @@ export default App;
           <FooterPart2 />
           <FooterSecond />
         </div>
-      </div> */}
-
-
+      </div> */
+}
 
 // <div className="detail">
 // <HeadHelp />
