@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 function ProductMain(props) {
   // const { id, thumbnail, title, price } = props.data;
-  const {addToCart} = useContext(ShopContext);
+  // const {addToCart} = useContext(ShopContext);
 
   const ProductMains = mainProduct.map((data, index) => {
     const liked = props.wishList.filter((wish) => wish.id === data.id)[0];
@@ -55,7 +55,9 @@ function ProductMain(props) {
           </div>
           <div>
             <p className="productCart">
-              <a onClick={() => addToCart(data.id)}>
+              <a
+              // onClick={() => addToCart(data.id)}
+              >
                 <i class="bi bi-cart"></i>
               </a>
             </p>
