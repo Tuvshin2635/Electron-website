@@ -1,5 +1,4 @@
 import "../App.css";
-import { useState } from "react";
 import HeadAdvertisment from "../Components/HeadAdvertisment";
 import SecondHead from "../Components/SecondHead";
 import ProductBar from "../Components/ProductBar";
@@ -9,11 +8,9 @@ import FooterProduct from "../Components/ProductFooter";
 import CommentClient from "../Components/CommentCLients";
 import SponsorName from "../Components/Sponsor";
 import LatestNews from "../Components/Latest";
-import SearchBar from "../Components/SearchBar";
 
 export default function MainPage(props) {
-  // const [cartShop, setCartShop] = useState(0);
-  // const [wishList, setWishList] = useState(0);
+
 
   return (
     <div className="header">
@@ -36,8 +33,8 @@ export default function MainPage(props) {
         <ProductMain
           wishList={props.wishList}
           setWishList={props.setWishList}
-          // cartShop={props.cartShop}
-          // setCartShop={props.setCartShop}
+          cartShop={props.cartShop}
+          setCartShop={props.setCartShop}
         />
       </div>
       <BigBanner />

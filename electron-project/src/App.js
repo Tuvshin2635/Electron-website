@@ -20,7 +20,11 @@ function App() {
   //wish
   const [wishList, setWishList] = useState([]);
   // cart
-  // const [cartShop, setCartShop] = useState(0);
+  const [cartShop, setCartShop] = useState([]);
+
+  // const setCartShopFunc = (val) => {
+  //   setCartShop([...cartShop, val]);
+  // }
 
   return (
     <div>
@@ -29,22 +33,22 @@ function App() {
         <SearchBar
           wishList={wishList}
           setWishList={setWishList}
-          // cartShop={cartShop}
-          // setCartShop={setCartShop}
+          cartShop={cartShop}
+          setCartShop={setCartShop}
         />
         <MainMenu />
 
         <Routes>
           <Route path="/SingIn" element={<SingIn />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart cartShop={cartShop} />} />
           <Route
             path="/MainPage"
             element={
               <MainPage
                 wishList={wishList}
                 setWishList={setWishList}
-                // cartShop={cartShop}
-                // setCartShop={setCartShop}
+                cartShop={cartShop}
+                setCartShop={setCartShop}
               />
             }
           />

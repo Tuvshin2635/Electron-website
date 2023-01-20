@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
-import { useState } from "react";
+
 
 // cartBoxContainer
 
@@ -81,7 +81,7 @@ function SearchBar(props) {
         </div>
 
         <p>
-          <Link to="/Cart">
+          <Link to="/Cart" cartShop={props.cartShop} >
             <i class="bi bi-cart"></i>
           </Link>
         </p>

@@ -100,6 +100,7 @@ export const mainProduct = [
     title: "Wireless headphones",
     price: "$99.00",
     rate: 1,
+    genre: "HeadPhones"
   },
   {
     id:2,
@@ -107,6 +108,7 @@ export const mainProduct = [
     title: "Tablet as a laptop",
     price: "$300.00",
     rate: 1,
+    genre: "tablet"
   },
   {
     id: 3,

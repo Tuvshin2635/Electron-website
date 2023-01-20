@@ -12,7 +12,7 @@ function ProductMain(props) {
     const liked = props.wishList.filter((wish) => wish.id === data.id)[0];
     // console.log(liked);
 
-    // const carted = props.cartShop.filter((cart) => cart.id === data.id)[0];
+    const carted = props.cartShop.filter((cart) => cart.id === data.id)[0];
 
     return (
       <div className="productMain">
@@ -55,10 +55,11 @@ function ProductMain(props) {
           </div>
           <div>
             <p className="productCart">
-              <a
-              // onClick={() => addToCart(data.id)}
-              >
-                <i class="bi bi-cart"></i>
+              <a>
+                <i class="bi bi-cart" onClick={() => {
+                console.log('clicked cart');
+                  const cartList = data.id;
+                 props.setCartShop([...props.cartShop, cartList]);}} ></i>
               </a>
             </p>
           </div>
