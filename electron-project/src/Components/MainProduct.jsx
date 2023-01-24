@@ -56,10 +56,14 @@ function ProductMain(props) {
           <div>
             <p className="productCart">
               <a>
-                <i class="bi bi-cart" onClick={() => {
-                console.log('clicked cart');
-                  const cartList = data.id;
-                 props.setCartShop([...props.cartShop, cartList]);}} ></i>
+                <i
+                  class="bi bi-cart"
+                  onClick={() => {
+                    console.log("clicked cart");
+                    const cartList = data;
+                    props.setCartShop([...props.cartShop, cartList]);
+                  }}
+                ></i>
               </a>
             </p>
           </div>

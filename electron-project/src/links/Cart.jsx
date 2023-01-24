@@ -6,18 +6,23 @@ export default function Cart(props) {
 
   return (
     <div>
-      <h1 className="cartTitle">hi</h1>
+      <h1 className="cartTitle"> hi </h1>
       {props.cartShop.map((item) => {
-        mainProduct.map((product) => {
-          if (item === product.id[0]) {
-            return (
-              <div>
-                <p>Title: {product.title}</p>
-                <p>Title: {product.thumbnail}</p>
-              </div>
-            );
-          }
-        });
+        return (
+          <div>
+            <h1> {item.title} </h1>
+          </div>
+        );
+        // mainProduct.map((product) => {
+        //   if (item === product.id[0]) {
+        //     return (
+        //       <div>
+        //         <p>Title: {product.title}</p>
+        //         <p>Title: {product.thumbnail}</p>
+        //       </div>
+        //     );
+        //   }
+        // });
       })}
     </div>
   );
