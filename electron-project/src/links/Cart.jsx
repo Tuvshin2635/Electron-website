@@ -1,28 +1,31 @@
 import React from "react";
-import { mainProduct } from "../Data/Banners";
+import "./Cart.css";
 
 export default function Cart(props) {
   console.log(props.cartShop);
 
   return (
     <div>
-      <h1 className="cartTitle"> hi </h1>
+      <div className="cartHeader">
+              <p> Product</p>
+              <p> Price</p>
+              <p> Quantity</p>
+              <p> SubTotal</p>
+            </div>
+      <h1> </h1>
       {props.cartShop.map((item) => {
         return (
           <div>
-            <h1> {item.title} </h1>
+            
+            <div className="cartContainer">
+              <div className="cartTumbnail"> {item.thumbnail}</div>
+              <h1 className="cartTitle"> {item.title} </h1>
+              <h1 className="cartPrice"> $ {item.price} </h1>
+              <h1 className="cartSize"> Size: { item.size} </h1>
+              <div></div>
+            </div>
           </div>
         );
-        // mainProduct.map((product) => {
-        //   if (item === product.id[0]) {
-        //     return (
-        //       <div>
-        //         <p>Title: {product.title}</p>
-        //         <p>Title: {product.thumbnail}</p>
-        //       </div>
-        //     );
-        //   }
-        // });
       })}
     </div>
   );
