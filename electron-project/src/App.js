@@ -29,36 +29,36 @@ function App() {
   return (
     <div>
       {/* <ShopContextProvider> */}
-        <HeadHelp />
-        <SearchBar
-          wishList={wishList}
-          setWishList={setWishList}
-          cartShop={cartShop}
-          setCartShop={setCartShop}
+      <HeadHelp />
+      <SearchBar
+        wishList={wishList}
+        setWishList={setWishList}
+        cartShop={cartShop}
+        setCartShop={setCartShop}
+      />
+      <MainMenu />
+
+      <Routes>
+        <Route path="/SingIn" element={<SingIn />} />
+        <Route path="/cart" element={<Cart cartShop={cartShop} />} />
+        <Route
+          path="/MainPage"
+          element={
+            <MainPage
+              wishList={wishList}
+              setWishList={setWishList}
+              cartShop={cartShop}
+              setCartShop={setCartShop}
+            />
+          }
         />
-        <MainMenu />
+      </Routes>
 
-        <Routes>
-          <Route path="/SingIn" element={<SingIn />} />
-          <Route path="/cart" element={<Cart cartShop={cartShop} />} />
-          <Route
-            path="/MainPage"
-            element={
-              <MainPage
-                wishList={wishList}
-                setWishList={setWishList}
-                cartShop={cartShop}
-                setCartShop={setCartShop}
-              />
-            }
-          />
-        </Routes>
-
-        <Footer />
-        <div className="footerPart3Container">
-          <FooterPart2 />
-          <FooterSecond />
-        </div>
+      <Footer />
+      <div className="footerPart3Container">
+        <FooterPart2 />
+        <FooterSecond />
+      </div>
       {/* </ShopContextProvider> */}
     </div>
   );
