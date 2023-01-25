@@ -24,19 +24,19 @@ export const bannerList = [
     description: "(6 items)",
   },
   {
-    id:5,
+    id: 5,
     title: "DSLR camera",
     image: "images/product02.jpg",
     description: "(6 items)",
   },
   {
-    id:6,
+    id: 6,
     title: "Desktop & Laptop",
     image: "images/product03.jpg",
     description: "(6 items)",
   },
   {
-    id:7,
+    id: 7,
     title: "DSLR camera",
     image: "images/product04.jpg",
     description: "(6 items)",
@@ -101,24 +101,24 @@ export const mainProduct = [
     price: "$99.00",
     rate: 1,
     genre: "HeadPhones",
-    size: "30"
+    size: "30",
   },
   {
-    id:2,
+    id: 2,
     thumbnail: "images/product03.jpg",
     title: "Tablet as a laptop",
     price: "$300.00",
     rate: 1,
     genre: "tablet",
-    size: "30"
+    size: "30",
   },
   {
     id: 3,
     thumbnail: "images/product04.jpg",
-    title: "Tablet as a laptop",
+    title: "JoysSTK",
     price: "$530.00",
     rate: 4,
-    size: "30"
+    size: "30",
   },
   {
     id: 4,
@@ -126,7 +126,7 @@ export const mainProduct = [
     title: "JBL bar 2.1 deep bass",
     price: "$130.00",
     rate: 2,
-    size: "30"
+    size: "30",
   },
   {
     id: 5,
@@ -134,7 +134,7 @@ export const mainProduct = [
     title: "Tablet as a laptop",
     price: "$530.00",
     rate: 2,
-    size: "30"
+    size: "30",
   },
   {
     id: 6,
@@ -142,7 +142,7 @@ export const mainProduct = [
     title: "Tablet as a laptop",
     price: "$430.00",
     rate: 3,
-    size: "30"
+    size: "30",
   },
   {
     id: 7,
@@ -150,7 +150,7 @@ export const mainProduct = [
     title: "JBL bar 2.1 deep bass",
     price: "$230.00",
     rate: 3,
-    size: "30"
+    size: "30",
   },
   {
     id: 8,
@@ -158,7 +158,7 @@ export const mainProduct = [
     title: "JBL bar 2.1 deep bass",
     price: "$130.00",
     rate: 4,
-    size: "30"
+    size: "30",
   },
   {
     id: 8,
@@ -166,7 +166,7 @@ export const mainProduct = [
     title: "Tablet as a laptop",
     price: "$530.00",
     rate: 5,
-    size: "30"
+    size: "30",
   },
   {
     id: 9,
@@ -174,7 +174,7 @@ export const mainProduct = [
     title: "Tablet as a laptop",
     price: "$430.00",
     rate: 4,
-    size: "30"
+    size: "30",
   },
   {
     id: 10,
@@ -182,7 +182,7 @@ export const mainProduct = [
     title: "JBL bar 2.1 deep bass",
     price: "$230.00",
     rate: 3,
-    size: "30"
+    size: "30",
   },
   {
     id: 11,
@@ -190,7 +190,7 @@ export const mainProduct = [
     title: "JBL bar 2.1 deep bass",
     price: "$130.00",
     rate: 2,
-    size: "30"
+    size: "30",
   },
   {
     id: 12,
@@ -198,7 +198,7 @@ export const mainProduct = [
     title: "Tablet as a laptop",
     price: "$530.00",
     rate: 1,
-    size: "30"
+    size: "30",
   },
   {
     id: 13,
@@ -206,7 +206,7 @@ export const mainProduct = [
     title: "Tablet as a laptop",
     price: "$430.00",
     rate: 2,
-    size: "30"
+    size: "30",
   },
   {
     id: 14,
@@ -214,7 +214,7 @@ export const mainProduct = [
     title: "JBL bar 2.1 deep bass",
     price: "$230.00",
     rate: 3,
-    size: "30"
+    size: "30",
   },
   {
     id: 15,
@@ -222,7 +222,7 @@ export const mainProduct = [
     title: "JBL bar 2.1 deep bass",
     price: "$130.00",
     rate: 5,
-    size: "30"
+    size: "30",
   },
 ];
 
