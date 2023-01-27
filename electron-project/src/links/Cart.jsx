@@ -6,15 +6,18 @@ export default function Cart(props) {
 
   return (
     <div>
-      <div className="cartHeader">
-        <p> Product</p>
-        <p> Price</p>
-        <p> Quantity</p>
-        <p> SubTotal</p>
-      </div>
-      <div>
-        <h1> Cart Total </h1>
-        <p> Subtotal </p>
+      <div className="cartHeaderContainer">
+        <div className="cartHeader">
+          <p> Product</p>
+          <p> Price</p>
+          <p> Quantity</p>
+          <p> SubTotal</p>
+        </div>
+
+        <div>
+          <p> Cart Total </p>
+        </div>
+          <p> Subtotal </p>
       </div>
       {props.cartShop.map((item) => {
         return (

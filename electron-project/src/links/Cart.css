@@ -1,3 +1,12 @@
+.cartHeaderContainer {
+    display: flex;
+    justify-content: space-around;
+    /* width: 890px;
+    height: 56px; */
+    padding: 10px 5px;
+    background: #e2f4ff;
+}
+
 .cartTitle {
   font-weight: 600;
   font-size: 20.68px;
