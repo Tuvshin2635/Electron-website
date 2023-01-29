@@ -14,11 +14,12 @@ export default function Cart(props) {
           <p> SubTotal</p>
         </div>
 
-        <div>
+        <div className="cartHeader2">
           <p> Cart Total </p>
-        </div>
           <p> Subtotal </p>
+        </div>
       </div>
+
       {props.cartShop.map((item) => {
         return (
           <div>

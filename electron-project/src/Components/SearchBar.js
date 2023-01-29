@@ -2,8 +2,6 @@ import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 
-
-
 // cartBoxContainer
 
 function SearchBar(props) {
@@ -42,46 +40,38 @@ function SearchBar(props) {
         </div>
       </div>
       {/* <div className="dataResult"></div> */}
-
       <div className="signInHeart">
         <p>
           <Link to="/SingIn">
             <i class="bi bi-person-plus"></i> Sign in
           </Link>
         </p>
+        <a id="dropdownMenuLink" data-toggle="dropdown">
+          <i class="bi bi-heart-fill">{props.wishList.length}</i>
+        </a>
 
-                
-        <div class="ui compact menu">
-          <div class="ui simple dropdown item">
-            <i class="bi bi-heart-fill">{props.wishList.length}</i>
-            
-            <i class="dropdown icon"></i>
-            <div class="menu">
-             
-            </div>
-
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">
             {props.wishList.map((w, index) => {
-                return (
-                  <div class="item">
-                    {w.name}
-                    <a>
-                      <button
-                        class="negative ui button"
-                        onClick={() => {
-                          props.setWishList(
-                            props.wishList.filter((wish) => wish.id !== w.id) //ustgax
-                          );
-                        }}
-                      ></button>
-                    </a>
-                  </div>
-                );
-              })}
-          </div>
+              return (
+                <div class="item">
+                  {w.name}
+                  <a>
+                    <button
+                      onClick={() => {
+                        props.setWishList(
+                          props.wishList.filter((wish) => wish.id !== w.id) //ustgax
+                        );
+                      }}
+                    ></button>
+                  </a>
+                </div>
+              );
+            })}
+          </a>
         </div>
-
         <p>
-          <Link to="/Cart" cartShop={props.cartShop} >
+          <Link to="/Cart" cartShop={props.cartShop}>
             <i class="bi bi-cart"></i>
           </Link>
         </p>
