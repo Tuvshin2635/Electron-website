@@ -1,12 +1,21 @@
-import '../App.css';
+import "../App.css";
 
 export default function SingIn() {
   return (
     <div>
       <h1 className="signUpTitle"> Sing up</h1>
       <div className="signUpForm">
-        <label htmlFor="firstname"> Name </label>
-        <input type="firstName" placeholder="Enter your name" />
+        <label htmlFor="firstname"> First Name </label>
+        <input type="firstName" placeholder="Enter your first name" />
+        <label htmlFor="firstname"> Last Name </label>
+        <input type="firstName" placeholder="Enter your last name" />
+        <label htmlFor="firstname"> Age </label>
+        <input type="firstName" placeholder="Enter your age" />
+        {/* <label type="gender"> Gender </label> */}
+        <div>
+          <input type="radio" value="Male" name="gender" /> Male
+          <input type="radio" value="Female" name="gender" /> Female
+        </div>
         <label htmlFor="email"> Email </label>
         <input type="email" name="" id="" placeholder="Enter your email" />
         <label htmlFor="password"> Password </label>
